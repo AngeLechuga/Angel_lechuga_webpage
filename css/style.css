@@ -1,0 +1,161 @@
+/* Hoja de estilos */
+
+/*colores customizados*/
+:root {
+    --negro:#ffffff;
+    --blanco:#212121;
+    --primero:#d9c47d;
+    --segundo:#d2d49f;
+    --tercero:#12125e;
+    --cuarto:#1d558e;
+    --quinto:#93afd2;
+}
+
+/* FUENTES DE GOOGLE
+
+.raleway-<uniquifier> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+/* Agregando REM 1rem = 10px */
+html {
+    font-size: 62.5%;
+    /* Para Box model */
+    box-sizing: border-box; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+
+body {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif; /*aplicando la fuente a toda la página*/
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1,h2,h3 {
+    text-align: center;
+}
+
+
+.title span {
+    font-size: 2rem;
+}
+
+/* centrar contenido */
+
+.container {
+    max-width: 120rem;
+            /* top rigth bottom left */
+    margin: 0 auto 0 auto;
+}
+
+.boton {
+    background-color: var(--segundo);
+    color: #212121;
+    padding: 1rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    font-weight: 400;
+    width: 30%;
+    text-align: center;
+}
+
+@media (min-width: 480px) {
+    .boton {
+        width: auto;
+    }
+}
+
+.nav-bg {
+    background-color: #1d558e;
+
+}
+
+.main-nav {
+    /* padding: 1rem; */
+    /* Acomodando elementos de barra de navegación */
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Ajuste barra de navegación */
+@media (max-width: 480px){
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: .8rem;
+    border-radius: .8rem;
+}
+
+.main-nav a:hover{
+background-color: var(--quinto);
+color: #212121;
+}
+
+/* MediaQueries */
+@media (min-width: 480px) {
+    body{
+        /* background-color:blue; */
+    }
+    
+}
+
+@media (min-width: 768px){
+    body {
+        /* background-color: #93afd2; */
+    }
+}
+
+/* Agregando imagen de fondo */
+.hero {
+    background-image: url(../img/8e8e8bf3-9f3c-4b5b-9045-5ebb945e8aea.png);
+    background-repeat: no-repeat; /* para que no se repita la imagen en pantllas grandes */
+    background-size: cover; /* toma el tamaño de la pantalla */
+    height: 410px;
+    padding: 20px;
+    position: relative;
+}
+
+.contenido-hero {
+    position: absolute;
+    background-color: rgb(0  0 0 / 40%);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero h2,
+.contenido-hero p {
+   color: var(--negro) 
+}
