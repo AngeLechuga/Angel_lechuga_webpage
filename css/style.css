@@ -173,3 +173,13 @@ color: #212121;
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
+.service .icons {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primero);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
