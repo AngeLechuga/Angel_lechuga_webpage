@@ -27,6 +27,7 @@ html {
 body {
     font-size: 16px; /* Agregando REM 1rem = 10px */
     font-family: "Raleway", sans-serif; /*aplicando la fuente a toda la página*/
+    /*background-image: linear-gradient(to top, rgb(87, 140, 151) 0%, var(--negro) 100%);  Aplicando gradiente al color de fondo */
 }
 
 /* centrar contenido */
@@ -52,6 +53,14 @@ body {
     .boton {
         width: auto;
     }
+}
+
+.shadow { /* Agregando sobra de CSS Generator */
+    -webkit-box-shadow: 0px 4px 11px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 11px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 11px 1px rgba(0,0,0,0.75);
+    padding: 2rem;
+    border-radius: 0.5rem;
 }
 
 /* Tipography */
@@ -134,6 +143,7 @@ color: #212121;
     height: 410px;
     padding: 20px;
     position: relative;
+    margin-bottom: 3rem; /* Separando la caja de main de la imagen hero */
 }
 
 .contenido-hero {
