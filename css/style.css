@@ -47,12 +47,17 @@ body {
     font-weight: 400;
     width: 30%;
     text-align: center;
+    border: none; /* para quitar el borde del botón del formulario */
 }
 
 @media (min-width: 480px) {
     .boton {
         width: auto;
     }
+}
+
+.boton:hover {
+    cursor: pointer;
 }
 
 .shadow { /* Agregando sobra de CSS Generator */
@@ -197,4 +202,56 @@ color: #212121;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Contact-form styles*/
+
+.contact-form {
+    background-color: var(--quinto);
+    width: 60%; /* usar el valor más pequeño */
+    margin: auto;
+    padding: 3rem;
+    border-radius: 0.5rem;
+}
+
+.contact-form fieldset {
+    border: none; /* eliminando estilo de borde por defecto */
+}
+
+.contact-form legend {
+    /* color: var(--tercero); */
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* Acomodadno los inputs dentro del formulario */
+.container-inputs {
+
+}
+
+.inputs {
+    margin-bottom: 1rem;
+}
+
+.inputs label {
+    color: var(--negro);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+/* inputs styles */
+.input-text {
+    width: 100%;
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+/* modificando botón de neviar */
+.send .boton {
+    width: 100%;
 }
