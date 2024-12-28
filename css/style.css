@@ -214,7 +214,7 @@ color: #212121;
 
 .contact-form {
     background-color: var(--quinto);
-    width: 60%; /* usar el valor más pequeño */
+    width: min( 60 rem, 100%); /* usar el valor más pequeño */
     margin: auto;
     padding: 3rem;
     border-radius: 0.5rem;
@@ -275,7 +275,12 @@ color: #212121;
 }
 
 
-/* modificando botón de neviar */
+/* modificando botón de enviar */
 .send .boton {
     width: 100%;
+}
+
+/* Estilos de footer */
+.fut {
+    text-align: center;
 }
