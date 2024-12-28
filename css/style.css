@@ -54,7 +54,7 @@ body {
     border-radius: .5rem;
     text-decoration: none;
     font-weight: 400;
-    width: 30%;
+    width: 50%;
     text-align: center;
     border: none; /* para quitar el borde del botón del formulario */
 }
@@ -211,8 +211,8 @@ color: #212121;
 }
 
 .service .icons { /* Ajustando y centrando iconos y su estilo */
-    height: 15rem;
-    width: 15rem;
+    height: 10rem;
+    width: 10rem;
     background-color: var(--primero);
     border-radius: 50%;
     display: flex;
@@ -224,7 +224,7 @@ color: #212121;
 
 .contact-form {
     background-color: var(--quinto);
-    width: min( 60 rem, 100%); /* usar el valor más pequeño */
+    width: min( 30 rem, 70%); /* usar el valor más pequeño */
     margin: auto;
     padding: 3rem;
     border-radius: 0.5rem;
