@@ -97,6 +97,7 @@ h1,h2,h3 {
 /* titles styles */
 .title span {
     font-size: 2rem;
+    color: var(--quinto);
 }
 
 /* Nav - bar styles */
